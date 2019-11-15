@@ -53,7 +53,7 @@ public class HammingTest
         Assert.Throws<ArgumentException>(() => Hamming.Distance("", "G"));
     }
 
-    [Fact(Skip = "Remove to run test")]
+    [Fact]
     public void Disallow_right_empty_strand()
     {
         Assert.Throws<ArgumentException>(() => Hamming.Distance("G", ""));
